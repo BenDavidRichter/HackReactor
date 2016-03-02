@@ -4,25 +4,26 @@
 	<title>
 
 	</title>
-	<link rel="stylesheet" type="text/css" href="">
 	
 </head>
 
 <body>
-	<div id="greeting">
-		
+	<div id="greeting"></div>
+			<div>
+				<p>
+				It is so wonderful to have someone from <span id="hometown"></span>!!
 
-			<p>
-			
 
+				</p>
+			</div>
 
-			</p>
-			
-	</div>
 	<script>
-		var visitor_name = prompt("Please enter your name.");
-		var welcome_message = ("Hello" + " " + visitor_name);
-		document.querySelector(welcome_message).textContent;
+		var visitor_name = prompt("Please enter your name!");
+		var welcome_message = "Hello, " + visitor_name + " we hope you find your visit to our page enjoyable.";
+		document.querySelector('#greeting').textContent = welcome_message;
+		var town = prompt("Please enter your hometown.");
+		document.querySelector('#hometown').textContent = town;
+		
 	</script>
 </body>
 

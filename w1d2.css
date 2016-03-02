@@ -1,0 +1,9 @@
+var secret_saying = prompt("What is the password?")
+
+if (secret_saying === "An eagle Flies at Midnight") {
+			response = "you may pass";
+			image_path = "http://alicewalkersgarden.com/wp-content/uploads/opendoor2.jpg" alt="Opendoor";
+		} else {
+		  response = "Release the hounds!";
+		  image_path = "https://s-media-cache-ak0.pinimg.com/736x/02/4e/02/024e02970df6386ba9fec55251ea0baa.jpg" alt="Big Dogs";
+		}

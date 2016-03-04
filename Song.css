@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>The Beer Song</title>
+  <head>
+  
+  <body>
+    <h1>The Beer Song</h1>
+
+      <p id="lyrics">
+      </p>
+    
+    <script> 
+    var n = 100, song = '';
+      
+      while ( n >=0 ) {
+      	if (n !== 0 ) {
+        	song = song + ' ' + n + " bottles of beer on the wall! chug, chug, chug";
+        } else {
+          song+= "no bottle of beer! stumble, stumble, stumble...";
+      }
+      n--;
+      }
+      
+      document.querySelector('#lyrics').textContent = song;
+    </script>
+    
+      
+  
+  
+  </body>
+<html>

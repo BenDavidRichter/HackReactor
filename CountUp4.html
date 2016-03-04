@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>The Beer Song</title>
+
+        <head>
+         
+        <style>
+         p.odd {
+          background-color:#ccc;
+        }
+        p.even {
+          background-color:#666;
+          }
+        </style>  
+        </head>
+
+            <body>
+                <div id="target"></div>
+
+                <script>
+                var n = 1,
+                    max = prompt("Enter a value"),
+                    loop = '',
+                    remainder = '';
+                while (n < max) {
+                    if (n === max - 1) {
+                        loop = loop + '<p class=\'odd\'>' + n + '</p>';
+                        n++;
+                        console.log(loop);
+                    } else {
+                        if (n % 2 === 0) {
+                            remainder = 'even';
+                        } else {
+                            remainder = 'odd';
+                        }
+                        loop = loop + '<p class=' + remainder + ' >' + n + '</p>' + "<hr>";
+                        n++;
+                        console.log(loop);
+                    }
+                }
+                console.log("finish");
+
+                document.querySelector("#target").innerHTML = loop;
+                </script>
+            </body>
+            <html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+	
+</head>
+
+<body>
+	<div id="greeting"></div>
+			<div>
+				<p>
+				It is so wonderful to have someone from <span id="hometown"></span>!!
+
+
+				</p>
+			</div>
+
+	<script>
+		var visitor_name = prompt("Please enter your name!");
+		var welcome_message = "Hello, " + visitor_name + " we hope you find your visit to our page enjoyable.";
+		document.querySelector('#greeting').textContent = welcome_message;
+		var town = prompt("Please enter your hometown.");
+		document.querySelector('#hometown').textContent = town;
+		
+	</script>
+</body>
+
+</html>

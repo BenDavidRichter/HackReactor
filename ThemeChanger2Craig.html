@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+	<style> 
+  
+  </style>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+</head>
+
+<body>
+	<div>
+			<p>
+			
+
+
+			</p>
+	</div>
+	<script>
+	var colorTheme = "";
+    var colorOK = false;    
+    
+    
+    
+    while (colorOK === false) {
+      colorTheme = prompt("What color would you like to view this page in?")
+        if (colorTheme === 'blue') {
+          $ ('body').css('background-color', colorTheme);
+          colorOK = true;
+      } else {
+      	  alert("nope, try again");
+      }
+    }
+    
+	</script>
+</body>
+
+</html>

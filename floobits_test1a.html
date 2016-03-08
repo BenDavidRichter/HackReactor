@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+	
+	
+</head>
+
+<body>
+	<div id=output>
+			Text already.
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script>
+		function date() {
+			console.log("Hi the time is " + new Date());
+		}
+
+		date();
+		date();
+		date();
+
+		function generate() {
+			$("#output").append("Append with this enthusiastic text! ");
+		}
+
+		var n = 0;
+
+		while (n < 12) {
+			generate();
+			n++;
+		}
+	</script>
+</body>
+
+</html>

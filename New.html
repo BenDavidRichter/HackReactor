@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+		#n {
+			color: blue;
+		}
+
+		#a {
+			color: red;
+		}
+
+		#v {
+			color: green;
+		}
+
+    #adv{
+      color: yellow;
+    }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div id="output">
+    	
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script>
+      function string_printer (string) {
+      	$('#output').text(string);
+      };
+
+      function funny_sentence(noun, adj, verb, adv){
+      	$ ('#output').append("<span id="n">" + noun + "</span>"+"<span id="a">" + adj + "</span>"+"<span id="v">" + verb + "</span>"+"<span id="adv">" + adv + "</span>");
+      };
+    </script>
+  </body>
+
+</html>

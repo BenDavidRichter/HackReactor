@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="target">Click on me</div><br>
+	<div id="money">show me the money</div><br>
+	<div id="Oprah">show me the Oprah</div><br>
+	<div id="Opera">show me the Opera</div><br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		var moneyFlag = true;
+		var oprahFlag = true;
+		var operaFlag = true;
+
+		$('div').on('click', function() {
+			console.log('A div has been clicked!');
+		});
+
+		$('#target').click(function() {
+			$('#target').show().css('color', 'red').text('boom goes the dynamite!');
+		});
+
+		$('#money').click(function(){
+			if (oprahFlag === false && operaFlag === false) {
+				$('#Oprah, #Opera').toggle();
+				$('#money').show().text('Here\'s the money!!');
+			} else if (moneyFlag === true) {
+				$('#money').show().text('Here\'s the money!!');
+				moneyFlag = false;
+			} else if (moneyFlag === false) {
+				$('#money').toggle();
+			}
+		});
+
+		$('#Oprah').click(function() {
+			if (moneyFlag === false && operaFlag === false) {
+				$('#money, #Opera').toggle(); 
+				$('#Oprah').show().text('Iiiiiits Oprah!!');
+			} else if (oprahFlag === true) {
+				$('#Oprah').show().text('Iiiiiits Oprah!!');
+				oprahFlag = false;
+			} else if (oprahFlag === false) {
+				$('#Oprah').toggle();
+			}
+		});
+
+		$('#Opera').click(function() {
+			if (moneyFlag === false && oprahFlag === false) {
+				$('#money, #Oprah').toggle();
+				$('#Opera').show().text('Operaaaaaaaaaah!!!!');
+			} else if (operaFlag === true) {
+				$('#Opera').show().text('Operaaaaaaaaaah!!!!');
+				operaFlag = false;
+			} else if (operaFlag === false) {
+				$('#Opera').toggle();
+			}
+		});
+	</script>
+</body>
+</html>

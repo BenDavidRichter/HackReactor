@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"></style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+  function this_that("this", "that"){
+  	var i = 0;
+  	while(i <= 100){
+  		if(i % 3 === 0) {
+  			i += this;
+  		} else if(i % 5 === 0) {
+  			i += that;
+  		} else if (i % 3 === 0 && i % 5 === 0) {
+  			i += (this + that);
+  		} else {
+  			i;
+  		}
+  		i++;
+  	}
+  }
+</script>
+</body>
+</html>

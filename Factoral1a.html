@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css"></style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript">
+
+	function factoral_of_n(num){
+		var tmp = num;
+    	while (num-- > 2) {
+        	tmp = tmp * num;
+    	}
+    	return tmp;	
+	};
+
+	function count_by_n(count_by, count_up_to){
+		var tmp = 0
+		while (tmp <= count_up_to) {
+			console.log(tmp);
+			tmp += count_by;
+		}
+	};
+	
+</script>
+</body>
+</html>

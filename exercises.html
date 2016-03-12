@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+	<style type="text/css">
+		.button {
+			height: 50px;
+			width: 50px;
+			background-color: Red;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+	<div id='target'>Some Text</div>
+	<div class='button'></div>
+	<div class='text'></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		var fn = function() {
+			console.log('heeey');
+		}
+
+		document.querySelector('#target').addEventListener('click', fn);
+
+		document.querySelector('#target').addEventListener('click', function() {
+			console.log('same deal');
+		});
+
+		document.querySelector('.button').addEventListener('click', function() {
+			var randomColor = '#' + Math.random().toString(16).slice(2, 8);
+			document.querySelector('.text').innerHTML += "<p>beep</p>";
+			document.querySelector('body').style.backgroundColor = randomColor;
+		});
+	</script>
+</body>
+
+</html>
+<!-- "https://code.jquery.com/jquery-2.1.1.js"

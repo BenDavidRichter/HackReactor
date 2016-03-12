@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+	
+	
+</head>
+
+<body>
+	<div id="output">
+			
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script>
+		var new_sentence = get_sentence()
+
+		function get_sentence(){
+			
+			var short = getRandomIntInclusive(1, 4);
+
+			 
+
+			if (short == 1) {
+				$("#output").text("This is the first sentence.");
+			} else if (short == 2) {
+				$("#output").text("This is the second sentence.");
+			} else if (short == 3) {
+				$("#output").text("This is the third sentence.");
+			} else {
+				$("#output").text("This is the fourth sentence.");
+			}	
+		}
+
+		function getRandomIntInclusive(min, max) {
+  				return Math.floor(Math.random() * (max - min + 1)) + min;
+			};
+
+	</script>
+</body>
+
+</html>

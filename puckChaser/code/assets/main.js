@@ -67,6 +67,7 @@ $(document).ready(function (e) {
 	            gameOver();
 	        } else if (pucksRemaining == 0){
 	        	gameOver();
+	        	element.innerHTML = "You don't seem to need the rest of your time! Good job!";
 	        } else {
 	            time = new Date( msLeft );
 	            seconds = (time.getUTCMinutes() * 60) + time.getUTCSeconds();

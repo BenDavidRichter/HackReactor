@@ -10,8 +10,27 @@ div {
 	margin-bottom: 5px;
 	margin-right: 5px;
 	/* border: 1px solid black; */
+	/* max-width: 50%; */
 }
 
-#inLine {
+.inLine {
 	display: inline-block;
+}
+
+#floatLeft {
+	float: left;
+}
+
+#booksAvailable {
+	min-height: 100px;
+}
+
+#itemList {
+	border: 1px solid black;
+}
+
+.totalCost {
+	text-align: center;
+	font-weight: 700;
+	color: red;
 }
